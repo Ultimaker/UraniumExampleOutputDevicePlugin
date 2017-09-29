@@ -2,7 +2,6 @@
 # This example is released under the terms of the AGPLv3 or higher.
 
 import os.path #To get a file name to write to.
-import zipfile #To write to zip files.
 
 from UM.Application import Application #To find the scene to get the current g-code to write.
 from UM.FileHandler.WriteFileJob import WriteFileJob #To serialise nodes to text.
