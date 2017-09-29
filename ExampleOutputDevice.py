@@ -18,13 +18,15 @@ class ExampleOutputDevicePlugin(OutputDevicePlugin): #We need to be an OutputDev
     #   register the output device to be displayed to the user.
     def start(self):
         self.getOutputDeviceManager().addOutputDevice(ExampleOutputDevice()) #Since this class is also an output device, we can just register ourselves.
+        #You could also add more than one output devices here.
+        #For instance, you could listen to incoming connections and add an output device when a new device is discovered on the LAN.
 
     ##  Called upon closing.
     #
     #   You can use this to break the connection with the device or service, and
     #   you should unregister the output device to be displayed to the user.
     def stop(self):
-        self.getOutputDeviceManager().removeOutputDevice("example_output_device")
+        self.getOutputDeviceManager().removeOutputDevice("example_output_device") #Remove all devices that were added. In this case it's only one.
 
 class ExampleOutputDevice(OutputDevice): #We need an actual device to do the writing.
     def __init__(self):
