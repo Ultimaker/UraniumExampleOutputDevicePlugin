@@ -82,5 +82,5 @@ class ExampleOutputDevice(OutputDevice): #We need an actual device to do the wri
         Logger.log("d", "Saving file... {progress}%".format(progress = progress))
 
     def _onFinished(self, job):
-        job.getStream().close()
+        job.getStream().close() #Don't forget to close the stream after it's finished.
         Logger.log("d", "Done saving file!")
