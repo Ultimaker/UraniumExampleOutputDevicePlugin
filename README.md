@@ -1,7 +1,7 @@
 Example Output Device
 =====================
 
-This is an example output device plug-in for Uranium.
+This is an example output device plug-in for Uranium. Uranium is the underlying framework used in Ultimaker Cura.
 
 Output devices are meant to communicate with a place where the output of the application can be stored. For instance, an export of the model or a result of computation.
 
@@ -12,10 +12,4 @@ The actual output device finds the desired file type to write with, and then pro
 Packaging
 ---------
 
-To package your plug-in, use the packaging script in Uranium: https://github.com/Ultimaker/Uranium/blob/master/create_plugin.py
-
-Try the following command:
-
-    python3 /path/to/Uranium/create_plugin.py plugin_location /path/to/UraniumExampleExtensionPlugin
-
-That should produce a .plugin file that can be added to any application based on Uranium.
+To create a plugin you can create a ZIP file from your complete plugin directory and rename it to use a .umplugin or .curaplugin extension.
