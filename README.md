@@ -1,7 +1,7 @@
 Example Output Device
 =====================
 
-This is an example output device plug-in for Uranium.
+This is an example output device plug-in for Uranium. Uranium is the underlying framework used in Ultimaker Cura and NinjaKittens.
 
 Output devices are meant to communicate with a place where the output of the application can be stored. For instance, an export of the model or a result of computation.
 
