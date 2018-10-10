@@ -2,7 +2,7 @@
     "name": "Example Output Device",
     "author": "Ultimaker",
     "version": "1.0",
-    "api": 4,
+    "api": 5,
     "description": "Example output device to instruct people on how to create Uranium output devices.",
     "catalog": "uranium"
 }
