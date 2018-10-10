@@ -71,7 +71,7 @@ class ExampleOutputDevice(OutputDevice): #We need an actual device to do the wri
 
         #For this example, we will write to a file in a fixed location.
         output_file_name = os.path.expanduser("~/output.txt")
-        file_stream = open(output_file_name, "w")
+        file_stream = open(output_file_name, "w", encoding = "utf-8")
         job = WriteFileJob(file_writer, file_stream, nodes, file_type["mode"]) #We'll create a WriteFileJob, which gets run asynchronously in the background.
 
         job.progress.connect(self._onProgress) #You can listen to the event for when it's done and when it's progressing.
